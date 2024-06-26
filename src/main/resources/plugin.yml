@@ -1,0 +1,23 @@
+name: PlayerTimeTracker
+version: 1.1
+main: fr.legarri.ptt.Main
+description: A simple plugin to track and display player playtime on the server.
+author: LeGarri
+
+commands:
+  playtime:
+    description: Shows the total playtime of the player.
+    usage: /playtime
+    permission: playertimetracker.playtime
+  topplaytime:
+    description: Shows the leaderboard of players with the most playtime.
+    usage: /topplaytime
+    permission: playertimetracker.topplaytime
+
+permissions:
+  playertimetracker.playtime:
+    description: Allows the player to check their playtime.
+    default: true
+  playertimetracker.topplaytime:
+    description: Allows the player to view the top playtime leaderboard.
+    default: op
